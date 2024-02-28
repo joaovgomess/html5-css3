@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Videos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor</p>
+    <video src="midia/video-teste.mp4" width="300" controls></video>
+    <p>Agora vejamos um vídeo de um dos maiores acontecimentos da história da humanidade. <br> O humilde e simpático Kanye Omari West dando uma carreira para a mid e subestimada taylor "rede de açougues" swift.</p>
+
+    <video controls poster="imagens/ye-face.jpg" width="600">
+        <source src="midia/kanye-vs-taylor.mp4" type="video/mp4">
+        <source src="midia/Kanye-Vs-Taylor.mkv" type="video/mp4">
+        <source src="midia/Kanye-Vs-Taylor.webm" type="video/webm">
+        <p>Infelizmente o seu navegador não consegue abrir o vídeo, caso queira baixo-lo, <a href="midia/kanye-vs-taylor.mp4">clique aqui</a>.</p>
+    </video>
+    <!--Para inserir videos que ficam hospedados no proprio site, o processo é basicamente o mesmo de inserir imagens, com a unica diferença de que a tag principal é a "video" ao invés de "picture" (obviamente :v). A tag "video" tambem tem seus parametros "control" que fazem a mesma função de fazer aparecer os botoes de play etc. Ja o parametro "poster" serve para colocarmos uma thumb no video, e basta colocar o caminho da foto que queremos colocar como thumb. O parametro "width", obviamente se refere a largura do video.-->
+
+    <!--Dentro da tag "video" há varias tags "source" que tentam carregar os videos. Note que apesar de ter 3 tags "source" só aparece um video no site. Isso acontece pq dentro da tag "video", o processo de leitura acontece tipo um if/else de java, o site tenta carregar o primeiro video (o primeiro source), e caso não consiga por quaisquer motivos, ele tenta carregar o próximo que tem um formato de video diferente (mp4, mkv, webm, ovg, etc.), e somente se nenhum dos videos puder ser carregado, irá aparecer a mensagem da tag "p"-->
+
+    <!--Note tambem que cada video que o site tenta carregar é de um formato diferente(mp4, mkv, webm), isso acontece pq alguns navegadores tem compatibilidades com formatos que outros não tem. Por isso é importante sempre fazer esse processo de tentar varios videos de formatos diferentes, para que o site possa funcionar no maior numero de navegadores possivel-->
+
+
+    <h1>Inserindo vídeos do Youtube</h1>
+    <h2>Video sem direitos autorais</h2>
+    <p>Agora vamos colocar em nosso site, um vídeo que está hospedado direto no youtube</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg?si=sgjZJNLuH5Od3ZsC&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h2>Video com diretos autorais</h2>
+    <p>Agora um vídeo de um dos maiores cantores da historia da historia, que infelizmente só da pra assistir direto do youtube pois o video tem direitos autorais</p> 
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/PsO6ZnUZI0g?si=qSTdqHHHxg7d3uqS&amp;start=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--Para adicionar um video que esta no youtube, é só entrar noproprio youtube e ir no vique que vc quer, apos isso é so clicar em compartilhar, escolher a opçao  incorporar ou "embed", e copiar e colar o codigo html que ele vai gerar.  Note que no site só vao carregar direto, videos sem direitos autorais. os que exigirem direitos autorais, o player ira dizer que este video só esta disponivel para assistir direto do youtube-->
+</body>
+</html>

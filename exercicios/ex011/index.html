@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos  diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--Dentro da tag "picture", usamos a tag "source" com os parametros "media", "srcset" e "type". O parametro "media" serve para dizermos que até aquela largura (nesse exemplo 750x) devemos abrir a "foto-p". Já no parametro "srcset" serve para mostrarmos ao site o caminho da imagem que deve ser carregada. E ja o parametro "type" serve para dizermos ao site qual o tipo da imagem que vai ser carregada(png, jpeg, etc.)-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"><!--é importante notar que a ordem que colocamos a tag "source" faz diferença. Por exemplo, se colocassemos a tag de no maximo 750px após essa tag de no maximo 1050px, o site não iria funcionar corretamente-->
+        <img src="imagens/foto-g.png" alt="Foto grande"> <!--Essa é a foto que gostariamos de carregar inicialmente, mas antes de carrega-la, o site lê as tags "source" e verifica se as condições não foram atendidas (se a tela que vai abrir o site no maximo 750px ou 1050px). Caso essas condiçoes nao forem verdadeiras, o site carregara esta imagem aqui, senão carregará uma das anteriores-->
+    </picture>
+
+    <h1>Reproduzindo Audios</h1>
+    <h2>Vamos aprender a reproduzir um audio dentro de um site</h2>
+    <audio src="midia/Dubstep Light - Audionautix.mp3" controls></audio> <!--Essa tag "audio" com o parametro "source", apesar de funcionar em alguns casos, já esta obsoleta.-->
+    <br>
+    <p>Agora vamos colocar música de verdade</p>
+    <audio controls>
+        <source src="midia/ghost-town-kanye-west.mp3" type="audio/mpeg"> <!-- Usar uma tag "audio" e dentro dela usar uma outra tag "source" é melhor, pq funciona em mais casos e navegadores diferentes. Note que na tag "audio" há um parametro "controls", ele serve para mostrar o botão de play/pause e o tempo de duração da música. Sem esse parametro, o audio seria carregado para o site mas não seria possivel tocar ele sem os controles. O parametro "src" na tag "source" serve para indicar o caminho do arquivo do audio e o parametro "type" é para indicar o tipo de arquivo (mp3, wav, ogg - mas é melhor sempre usar o mp3 por ser mais leve que os outros)-->
+    </audio>
+    <audio controls loop autoplay>
+        <source src="midia/off-the-grid(guitar-sample).mp3" type="audio/mpeg"> <!--Neste audio, adicionei os parametros "loop" e "autoplay". O "loop", como esperado, serve para que quando o audio termine de tocar, ele inicie novamente automaticamente. Já o "autoplay" serve para que ao entrar no site, o audio já comece a tocvar automaticamente, sem que precise dar play. (infelizmente eu não sei o pq isso não está funcionando, e para o meu azar, nem o guanabara sabia o pq de não funcionar tambem kkkjkkkkj)-->
+    </audio>
+</body>
+</html>

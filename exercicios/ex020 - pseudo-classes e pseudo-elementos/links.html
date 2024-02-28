@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /*
+            #  = id
+            .  = class
+            :  = pseudo-class
+            :: = pseud0-element
+            >  = children (filho)
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{ /*Essa é uma pseudo-classe que formata links que ja forma visitados antes*/
+            color: brown;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: green;
+        }
+
+        a:active{ /*Essa é uma pseudo-classe que formata elementos no momento em que estão sendo clicados*/
+            color:magenta;
+        }
+
+        a::after{ /*Esse é um PSEUDO-ELEMENTO que formata (nesse caso, adiciona) algo depois de um elemento(nesse casoo, um link)*/
+            content: ' [link]';/*Define o conteudo que vai vir depois do link*/
+            text-decoration: none;
+            font-weight: normal;
+            color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Personallizando links</h1>
+    </div>
+    
+
+    <ul>
+        <li><a href="https://www.instagram.com/http.vgomez?igsh=MXNjOW44ZGhwYXR5MQ==" rel="external" target="_blank">Instagram</a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100004786596170&mibextid=ZbWKwL" rel="external" target="_blank">Facebook</a></li>
+        <li><a href="https://youtu.be/qAsHVwl-MU4?si=ifHB4vUu3Kvrsw83" rel="external" target="_blank">Perfeição</a></li>
+    </ul>
+</body>
+</html>

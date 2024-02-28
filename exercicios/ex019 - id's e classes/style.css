@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+
+ body{
+    background-color: #D4FEE8;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+
+h1#principal {
+    color: #D4FEE8;
+    background-color: #3B805E;
+    text-align: center;
+}
+/*
+    Nessa lição aprendemos como usar id's. Os id's servem para "colocar um nome" em uma tag especifica, para quando quisermos mexer na formatação de apenas um elemento específico(nessa caso, o primeiro "h1"). 
+        
+    Para definirmos um "id" (dar nome), temos que ir no documento html, e no elemento escolhido devemos colocar o parametro "id" (veja como fizemos primeiro "h1" no documento "index.html".
+
+    Após isso, devemos vir ao documento css e criar o bloco "h1#principal" ("h1" é o tipo do elemento que escolhemos, "#" é a identificação de que é um "id" e "principal" é o nome que demos ao elemento [pode ser qualquer coisa que quisermos])
+    Depois disso, é só formatar esse elemento em específico e ser feliz ;)
+
+    IMPORTANTE: SEGUNDO A W3C SÓ PODE TER UM ID EM UM ARQUIVO HTML, POR ISSO DEVEMOS USAR AS CLASSES
+*/
+
+ h1{
+    color: #1C442E;
+ }
+
+ h2 {
+    color: #45795F;
+ }
+
+
+ /* 
+    Logos após aprendemos sobre as classes, que funcionam da mesma forma que os ids (dar nome para um elemento específico), mas que podem ser usados quantas vezes quiserem no html.
+
+    Para usarmos a classe, devemos colocar a o parametro "class" na tag especifica que queremos (note como fizemos nos h2 do documento html). Ja no documento css, para nos referimos a classe, basta colocar um "." junto do nome da classe que escolhemos.
+    
+    Note que todos os h2 que estão marcados com "basico" ficaram azuis e assim por diante, mas caso houvesse um outro h2 sem a marcação da classe "basico", ele estaria verde como o h2 ali de cima.
+
+ */
+
+ .basico{
+    color: rgb(74, 69, 121);
+ }
+
+ .intermediario{
+    color: #adba3c
+ }
+
+ .avançado{
+    color: #ba3c3c
+ }
+
+ p{
+    color: #1C442E;
+    text-align: justify;
+ }

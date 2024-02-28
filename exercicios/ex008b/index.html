@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras Formatações</title>
+</head>
+<body>
+    <h1>Outras Formatações</h1>
+
+    <h2>Código Fonte</h2>
+
+    <p>O comando document.getElementById('teste') é escrito em liguagem JavaScript (Note que na mesma fonte do resto do texto, a parte do codigo fica dificil de entender)</p>
+
+    <p>Com a tag "code", podemos alterar a fonte do texto para que fique mais facil de compreender, mas esta tag não organiza tambem os espaços e "enters" do codigo. <br> Por exemplo:
+        <code>
+            num = int(input('Digite um número'))
+            if num % 2 == 0:
+                print('O número {num} é PAR')
+            else:
+                print(f'O número {num} é IMPAR')
+            print('Fim do programa')
+        </code>
+    </p>
+
+    <p>Para incluir os espaços e "enters" tambem, devemos utilizar a tag "pre" antes da tag "code" <br> Por exemplo:
+        <pre>
+            <code>
+                num = int(input('Digite um número'))
+                if num % 2 == 0:
+                    print('O número {num} é PAR')
+                else:
+                    print(f'O número {num} é IMPAR')
+                print('Fim do programa')
+            </code>
+        </pre> <!--Note que até os espaços antes da escrita começar tambem foram incluidos no site. A tag "pre" vai mostrar ABSOLUTAMENTE todos os espaços e enters que existirem entre o inicio e o fim da tag. Se não quiser que o codigo fique afastado do canto da tela, simplesmente apague os espaços-->
+    </p>
+
+    <h2>Citações Simples</h2>
+    <p>Podemos demonstrar citações com a tag "q". <br> Por exemplo: Como diria um professor meu: <q>o computador é um burro muito rápido</q>.</p> <!--Sim, essa tag é só pra colocar aspas no texto. Mas é importante realamente usar ela para as citações, pois o site deve entender assim. Quando quiser usar aspas em algo que não for uma citação, não precisa usar essa tag-->
+
+    <h2>Citações Completas</h2>
+    <p>Para fazer citações completas, utlizamos a tag "blockquote". <br>Por exemplo: <br> Segundo Stephen Chbosky, em seu livro As vantagens de ser invisivel:
+        <blockquote cite = https://www.google.com.br/books/edition/The_Perks_of_Being_a_Wallflower/pK0X5FyUs28C?hl=en&gbpv=0>
+            We accept the love we think we deserve.
+        </blockquote> <!--Neste tipo de citação, o texto não ganha aspas, mas fica em evidencia no site, pulando para a proxima linha e ganhando um espaço em relaçao ao canto esquerdo do site. Aquele parametro que contem um link serve para que o navegador que voce esta usando saiba que aquela frase veio daquele livro, mas visualmente não muda nada em seu site, e funcionaria normalmente sem o link-->
+    </p>
+
+    <h2>Abreviações</h2>
+    <p>Para demonstrar abreviaçoes, usamos a tag " " <br> Por exemplo: Estou estudando <abbr title="Hyper Text Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou curtindo muito!!</p> <!--Para ver o efeito, passe o cursor do mouse por cima das palavras destacadas-->
+
+    <h2>Texto Invertido</h2>
+    <p> Para escrever coisas com as letras invertidas, podemos usar a tag "bdo" <br> Por exemplo: <bdo dir="rtl">Estou aprendendo a criar coisas em HMTL.</bdo></p> <!-- basicamente é inutil kkkkkkjkkk-->
+</body>
+</html>

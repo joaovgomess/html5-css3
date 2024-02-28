@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            text-align: center;
+            background-color: white;
+            padding: 10px;
+            margin: 0px; 
+            border-radius: 20px;    
+        }
+
+        /*O "border-radius" serve para arredondar a borda de uma caixa. */
+
+        nav{
+            background-color: darkgray;
+            padding: 2px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.429);
+        }
+        /*O "box-shadow" serve para criar uma sombra envolta de um certo elemento.
+        
+        Para usa-lo, a primeira medida deve ser o quanto ele se move para direita, o segundo é o quanto ela se move para baixo, o terceiro é o quanto ela vai se esfumaçada, e o quarto valor é a cor dessa sombra*/
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 50px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: darkgreen;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;  
+            border-radius: 10px;   
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <header> <!--Usado para cabeçalhos-->
+        <h1>Meu site</h1>
+        <nav> <!--Usado para uma área de navegação (menu)-->
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+
+    <main> <!--;indica a área principal do seu site-->
+        <section id="assuntos"> <!--Como o nome diz, indica uma sessão (que nesse caso, nomeamos de assuntos)-->
+
+        </section>
+        <section id="noticias">
+            <article> <!--Artigos-->
+                <h2>Notcia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae recusandae molestias at quis voluptas similique, illum consectetur iusto id esse facilis ab vero expedita quisquam nihil delectus ratione sequi sed? Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi qui officia ducimus corrupti obcaecati dolorum quo perspiciatis enim, debitis eaque molestiae, facilis maiores fugiat voluptatibus quaerat laudantium cumque non. Repellat?</p>
+                
+                <aside> <!--Vou ser sincero, não entendi o uso desse aqui-->
+                    <p>Artigo escrito por Joaozinho</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+
+    <footer> <!--Usado par o rodapé do site-->
+        <p>Desenvolvido pelo Jaum</p>
+    </footer>
+</body>
+</html>
+
+<!--No HTML antigo, era comum criair divs para tudo. Porém, com o desenvolvimento do HTML semantico, foram criadas varias boxes que tem significado
+
+Não é errado usar somente divs para fazer um site, mas com as tags semanticas fica mais facil de organiza-lo e ainda faz com que seu site fique mais relevante para o seu site de busca-->

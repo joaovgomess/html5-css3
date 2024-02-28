@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Trabalhando com Listas</title>
+    </head>
+    
+    <body>
+        <h1>Trabalhando com Links</h1>
+
+        <h2>Usando links externos</h2>
+
+        <p>Você pode acessar o perfil do <a href="https://www.instagram.com/kanyewest/?hl=en">Kanye West no Instagram:</a></p> <!--Para transformar um texto em um link clicavel, utlizamos a tag "a". O parametro "href" desta tag, serve para indicar para qual site o usuario será redirecionado ao clicar.-->
+        
+        <p>Você tambem pode acessar a <a href="https://en.wikipedia.org/wiki/Kanye_West" target="_blank" rel="external">pagina de Ye na Wikipedia</a></p> <!--Note que ao clicar no link de cima, que leva para o instragram, o nosso site é sobreescrevido e some para dar lugar ao instagram. Ja clicando neste link para apagina no Wikipedia, uma nova aba é aberta para carregar a wikipedia, e o nossa site ainda continua aberto na aba anterior. Isso acontece por conta dos parametros "target" que quando marcado como "_blank" faz essa função das abas descrita acima, já o parametro "rel" quando marcado como "external" mostra para o navegador que este link é de um site externo, que não nos pertence-->
+
+        <h2>Usando links Internos</h2>
+        <p>Essa é a primeira página do meu site, para acessar a segunda <a href="pag002.html" rel="next">clique aqui.</a></p> <!--Para criar links internos(para uma página sua) o processo é o mesmo de links externos, o que muda é que no parametro "href" temos que colocar o nome do arquivo do nosso site, e não a url dele. A "rel = 'next'" não muda nada visualmente, mas ajuda o navegador a entender o fluxo de paginas do nosso site.-->
+        <p>Voce tambem pode acessar a nossa terceira página <a href="outras pags/pag003.html" rel="next">clicando aqui</a></p><!--Para linkarmos algo para um site nosso, mas que está em um pasta diferente do site atual, devemos colocar o caminho completo do arquivo, com o nome e a pasta onde ele se encontra.-->
+
+        <h2>Links para Downloads</h2>
+        <ul>
+            <li><a href="arquivos/arq_teste1.docx" download="arq_teste1.docx" type="application/pdf">baixar o arquivo em docx</a></li>
+            <!---->
+            <li><a href="arquivos/arq_teste1.zip" download="arq_teste1.zip" type="application/zip">arquivo compactado em zip</a></li>
+        </ul>
+    </body>
+</html>

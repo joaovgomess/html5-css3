@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*No css, podemos formatar apenas um elemento que esta dentro de outro(nesse caso, um paragrafo que esta dentro de uma div). Para fazer isso, devemos criar um bloco informando o elemento de fora (div), usar o ">" para indicar que o que vem a seguir é filho desse elemento (que esta dentro), e logo depois informamos o elemento que vai ser formatado "p". Seguindo o exemplo: div > p */
+        div > p { 
+            display: none; /*Não sei do display, mas esse valor "none" serve para não mostrar ele na tela.*/
+        }
+
+
+        /*Podemos mexer no estado de um elemento que esta dentro de uma div tambem, e para isso é só seguir o que foi descrito no comentario acima, com a excessão de que iremos adicionar a pseudo-classe que queremos (nesse caso, hover)*/
+        div:hover > p {
+            display: block; /*Esse valor "block", serve para mostrar o elemento na tela*/
+            background-color: red;
+            color: white;
+            width: 230px;
+        }
+
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        Passe o mouse aqui
+        <p>TEXTO SECRETOO KKKJKKJ</p>
+    </div>
+    <p>Fim do site ;)</p>
+</body>
+</html>

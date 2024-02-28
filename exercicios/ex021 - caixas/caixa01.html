@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos de caixas</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+            /*Quando configuramos a altura, largura, cor de fundo e etc de um elemento, estamos na verdae, alterando as características do box desse elemento, e não de seu conteudo*/
+
+            border-width: 10px;
+            border-color: red;
+            border-style: solid; 
+            /*Para configurar uma borda, temos que informar esses três parametros (largura, cor e o estilo que pode ser: solido, pontilhado, tracejada e etc.)*/
+
+            padding-top: 10px; 
+            padding-bottom: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            /*O padding é o espaço que existe entre o box e o conteudo dentro dela. Por padrão ele é nulo, ou seja, o conteudo sempre virá encostando no box, a não ser que configuremos via css. Ele pode ser formatado na direita, esquerda, em cima e embaixo*/
+
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            /*O margin, como o nome diz, é apenas a margem dessa box. Ou seja, é o espaço entre um elemento e outro. Cada tag/elemento tem sua margin padrão, mas podemos alterar-lo da mesma forma que o padding.*/
+
+            
+            /*
+            IMPORTANTE: PARA CENTRALIZAR UM ELEMENTO DE FORMA RESPONSIVA, É SÓ COLOCAR UM:
+
+            nome-do-elemento{
+                margin: auto;
+            }
+            */
+
+            outline-style: dashed;
+            outline-width: 5px;
+            outline-color: yellow;
+            /*Já um outilne, é um espaço que sempre estará em volta da borda (oq faria com que ele estivesse entre a borda e a margem, porem, pode haver momentos que o outline ultrapasse os limites da margem. Mas ele NUNCA irá ultrapassar os limites da borda
+            
+            Como vc pode perceber, os parametros dele são os mesmos da margem e da borda.
+            */
+        }
+
+        h2{/*Existem shorthands que nos poupam tempo e nos ajudam a ter um documento mais organizado.*/
+            width: 350px;
+            height: 50px;
+
+            border: 10px solid blue;
+            outline: 5px dashed violet;
+            /*Nesse exemplo, fizemos aquela configuração do border e do outline em apenas uma linha. A sequencia correta é: largura, estilo e cor*/
+
+            padding: 10px 20px 10px 20px;
+            margin: 10px 20px 10px 20px;
+            /*Há aqui, fizemos a configuração do padding e do margin também em apenas uma linha. A sequencia correta é no sentido horario: top, right, bottom, left*/
+            
+        }
+
+        a{
+            border-style: solid;
+            border-width: 5px;
+            border-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa Box-Level</h1>
+    <p>Paragrafos tambem são exemplos de box-level, mas os <a href="#">links são exemplos de caixas inline-level</a>. Vamos ver com tudo isso funciona</p>
+
+    <h2>Exemplo</h2>
+</body>
+</html>

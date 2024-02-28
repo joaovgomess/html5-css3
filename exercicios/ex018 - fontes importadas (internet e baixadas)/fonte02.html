@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Baixadas</title>
+    <style>
+
+        /*Nessa parte do exercico, aprendemos a utilizar fontes que baixamos da internet (ou que seu cliente te deu). Os tipos de arquivos de fontes são "ttf" e "otf" (infelizmente eu não achei um tipo "otf" pra testar). Para usarmos uma fonte baixada, temos que colocar essa fonte na pasta do nosso site, e na primeira linha do seu arquivo css (nessa caso, na tag "style") devemos colocar a regra "@font-face", como esta sendo feito aqui embaixo. No "font-family" podemos colocar o nome que quisermos, no url devemos colocar o caminho do arquivo da fonte baixada, em format devemos colocar o tipo do formato de arquivo (estão descritos no comentario ali embaixo), e o font weight e style é só para não ficar em negrito e italico. */
+        @font-face {
+            font-family: Love;
+            src: url('fontes/love larry ttf.ttf') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+
+            /* 
+            Os tipos de "format()"
+            - opentype = otf
+            - truetype = ttf
+            - embedded-opentype
+            - truetype-aat = Apple Advanced Typography
+            - svg
+            */
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'Love', Times, serif ;
+            font-size: 2em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>Título teste</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae recusandae similique magni enim laudantium reprehenderit aliquam placeat, quo, laborum quibusdam ducimus? Nihil eos itaque ex voluptate perspiciatis magni nam nemo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores error incidunt nostrum, delectus magnam ab corrupti totam unde! Ducimus eum vitae nesciunt cumque omnis fugit sed quam recusandae! Sed, voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate qui adipisci esse hic cumque ipsa deleniti ex odio dolor assumenda laboriosam, non modi consequatur iure nihil quam eum. Exercitationem, officia!</p>
+</body>
+</html>

@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url('fontes/idroid.otf') format(opentype);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --cor01: #83DFB4;
+    --cor02: #39DE8E;
+    --cor03: #2DA76C;
+    --cor04: #1B5A41;
+    --cor05: #0B3B27;
+}
+
+body{
+    background-color: var(--cor01);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    text-align: justify;
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor05), var(--cor03));
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.477);
+}
+
+header > p{
+    margin: 20px;
+}
+
+header > nav{
+    text-align: left;
+}
+
+nav > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav > a:hover{
+    background-color: var(--cor04);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+nav > a:active{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    color: var(--cor04);
+}
+
+main{
+    background-color: white;
+    padding: 10px;
+    width: 800px;
+    margin: auto;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.477);
+    border-radius: 0px 0px 10px 10px;
+}
+
+span.destaque{
+    font-weight: bold;
+    color: var(--cor04);
+}
+
+h1#principal{
+    color: var(--cor04);
+    font-family: 'android', Arial, Helvetica, sans-serif;
+}
+
+h2{
+    background-image: linear-gradient(to right, #C5ECD6, white);
+    color: var(--cor04);
+    font-family: 'android', Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+section#video{
+    background-color: var(--cor04);
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+section#saberMais{
+    background-color: var(--cor01);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.496);
+}
+
+section#saberMais > h3{
+    background-color: var(--cor03);
+    color: white;
+    margin: 0;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+
+}
+
+section#saberMais > p{
+    padding: 10px;
+}
+section#saberMais > ul{
+    column-count: 2;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+a{
+    color: var(--cor04);
+    font-weight: bold;
+}
+
+div.foto{
+    text-align: center;
+
+}
+
+footer{
+    background-color: var(--cor04);
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 10px;
+    padding: 10px;
+}
