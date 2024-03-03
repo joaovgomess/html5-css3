@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+    <style>
+
+        body{
+            background-image: url(imagens/wallpaper002.jpg); /*Define uma imagem como o fundo do corpo (body) do site*/
+        }
+
+        div.quadrado{
+            display: inline-block; 
+            border: 1px solid black;
+            background-color: aqua;
+            width: 300px;
+            height: 300px;
+            /*Esse inline-block no display, define que um elemento seja alocado um ao lado do outro, ao inves de uma coluna*/
+            /*Esse border escrito em uma linha, é um shorthand que define a largura da borda, o tipo de borda e a cor da borda*/
+        }
+
+        div#q1{
+            background-color: blueviolet;
+        }
+
+        div#q2{
+            background-image: linear-gradient(to bottom, #ffffcc,yellow, orange, red, brown, #611919 );
+            /*Como ja vimos em outras aulas, esse parametro "background-image" possui uma função "linear-gradiente" que possibilita criar um degradê de cores, definindo a direção do degradê e podendo adicionar a quantidade cores que quisermos*/
+        }
+
+        div#q3{
+            background-image: url(imagens/wallpaper001.jpg);
+            /*O background-image tabem possui uma função url que permite colocarmos uma imagem real de fundo em um elemento. Para isso, só é necessário indicar o caminho de onde a imagem está*/
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+
+    <div class="quadrado" id="q2">
+
+    </div>
+
+    <div class="quadrado" id="q3">
+
+    </div>
+
+    <!--Um short hand muito util do HTML é a criação de varios elementos de uma vez só. Para isso, só precisamos escrever o nome do elemento, um sinal de '*' e a quantidade de elementos que queremos. Por exemplo: header*5-->
+    <!--No exemplo acima, criamos as divs com o shorthand "div.quadrado*3". Podemos informar tambem o nome de uma classe nesse shorthand, adicionando um "." junto com o nome da classe. Os ids foram adicionados depois, de forma manual.-->
+</body>
+</html>
