@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alinhamento Vertical</title>
+    <style>
+        #container{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%; /*Usando porcentagem no 'bacground-size' informamos que queremos que ocupe 100% da altura e 100% da largura*/
+
+            position: relative;/*Tencnicamente, todo elemento ja tem posição relativa, mas é sempre bom declarar kkkjkkj*/
+
+            height: 500px;
+            padding: 30px;
+            background-color: blueviolet;
+        }
+
+        #conteudo{
+            background-image: url(imagens/target001.png);
+            background-size: 100% 100%;
+
+            position: absolute;
+            /*Considerando o 'position' do elemento de fora seja 'relative', devemos setar o 'position' do elemento de dentro (o que queremos centralizar) como 'absolute'*/
+
+            height: 200px;
+            width: 400px;
+            background-color: forestgreen;
+
+            left: 50%;
+            top: 50%;
+            /*Após setar a posição como absoluta, podemos mexer nesses dois parametros. Setando eles dois como '50%', posicionamos o canto superior esquerdo do elemento de dentro, no centro do elemento de fora*/
+
+            transform: translate(-50%, -50%);
+            /*Após isso, usamos o parametro 'transform' com a funçao 'translate' (translação) e passamos os valores de '-50%' para cima e '-50% para a direita. Dessa forma centralizamos o elemento de dentro.*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+            
+        </article>
+    </section>
+</body>
+</html>

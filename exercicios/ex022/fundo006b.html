@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        body{
+            height: 100vh;
+            background-color: black;
+            background-image: url(imagens/wallpaper002.jpg);
+            background-position: center top;
+            background-repeat: no-repeat;
+
+            background-size: cover;
+            background-attachment: fixed;
+            /*Para resolver o problema relatado no 'fundo006', basta usarmos o parametro 'background-attachment'. Por padrão, o valor dele é 'scroll' (rola a imagem de fundo junto com o conteudo), mas podemos mudar esse valor para 'fixed', dessa forma ao rolarmos a tela a imagem de fundo ficará fixa e o conteudo ira rolar normalmente.*/
+
+
+
+            /* O shorthand do background possibilita escrever todos os parametros acima em apenas uma declaração. Para isso devemos informar: color > image > position > repeat > size > attachment.
+            Por exemplo:
+            
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat cover fixed ;
+
+            IMPORTANTE: apesar de na documentação afirmar que os navegadores funcionam com esse shorthand, nos testes que fizemos não conseguimos fazer funcionar. Isso por conta do size.
+            Para resolver isso, é só retirar o size do shorthand, e fazer uma declaração a parte para ele. Por exemplo: 
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed ;
+            background-size: cover; */
+        }
+
+        main{
+            background-color: white;
+            max-width: 500px;
+            padding: 10px;
+            margin: auto;
+            border: 5px solid darkgreen;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de Imagem de Fundo</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione alias fugit temporibus quod repudiandae sequi animi modi recusandae maxime? Nisi beatae dolorem atque vitae aliquam reiciendis dignissimos libero recusandae debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos laboriosam, ipsum officiis iure obcaecati illo, placeat nam, fuga nemo sunt earum aperiam rem quibusdam vel sapiente sint qui hic officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia dolorem, delectus facere perspiciatis, eius quos fuga nihil aliquam blanditiis est, nulla excepturi asperiores dolore libero sit architecto non beatae!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione alias fugit temporibus quod repudiandae sequi animi modi recusandae maxime? Nisi beatae dolorem atque vitae aliquam reiciendis dignissimos libero recusandae debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos laboriosam, ipsum officiis iure obcaecati illo, placeat nam, fuga nemo sunt earum aperiam rem quibusdam vel sapiente sint qui hic officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia dolorem, delectus facere perspiciatis, eius quos fuga nihil aliquam blanditiis est, nulla excepturi asperiores dolore libero sit architecto non beatae!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione alias fugit temporibus quod repudiandae sequi animi modi recusandae maxime? Nisi beatae dolorem atque vitae aliquam reiciendis dignissimos libero recusandae debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos laboriosam, ipsum officiis iure obcaecati illo, placeat nam, fuga nemo sunt earum aperiam rem quibusdam vel sapiente sint qui hic officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia dolorem, delectus facere perspiciatis, eius quos fuga nihil aliquam blanditiis est, nulla excepturi asperiores dolore libero sit architecto non beatae!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione alias fugit temporibus quod repudiandae sequi animi modi recusandae maxime? Nisi beatae dolorem atque vitae aliquam reiciendis dignissimos libero recusandae debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos laboriosam, ipsum officiis iure obcaecati illo, placeat nam, fuga nemo sunt earum aperiam rem quibusdam vel sapiente sint qui hic officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia dolorem, delectus facere perspiciatis, eius quos fuga nihil aliquam blanditiis est, nulla excepturi asperiores dolore libero sit architecto non beatae!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione alias fugit temporibus quod repudiandae sequi animi modi recusandae maxime? Nisi beatae dolorem atque vitae aliquam reiciendis dignissimos libero recusandae debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos laboriosam, ipsum officiis iure obcaecati illo, placeat nam, fuga nemo sunt earum aperiam rem quibusdam vel sapiente sint qui hic officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia dolorem, delectus facere perspiciatis, eius quos fuga nihil aliquam blanditiis est, nulla excepturi asperiores dolore libero sit architecto non beatae!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione alias fugit temporibus quod repudiandae sequi animi modi recusandae maxime? Nisi beatae dolorem atque vitae aliquam reiciendis dignissimos libero recusandae debitis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos laboriosam, ipsum officiis iure obcaecati illo, placeat nam, fuga nemo sunt earum aperiam rem quibusdam vel sapiente sint qui hic officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia dolorem, delectus facere perspiciatis, eius quos fuga nihil aliquam blanditiis est, nulla excepturi asperiores dolore libero sit architecto non beatae!</p>
+    </main>
+</body>
+</html>
