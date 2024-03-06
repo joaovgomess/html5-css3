@@ -58,6 +58,11 @@ section{
     font-size: 3vw;
 }
 
+section > p{
+    padding-bottom: 2em;
+    text-align: justify;
+}
+
 .fundo-branco{
     background-color: white;
     color: preta;
@@ -66,11 +71,26 @@ section{
 .fundo-imagem{
     background-color: darkblue;
     color: white;
+    box-shadow: inset 6px 6px 12px 0px rgba(0, 0, 0, 0.549);
+
+    background-attachment: fixed;
+    background-position: right center;
+    background-size: cover;
 }
 
 .fundo-imagem > p{
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.373);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.501);
+    text-shadow: 2px 2px 0px black;
+}
+
+#imagem1{
+    background-image: url(imagens/background001.jpg); 
+}
+
+#imagem2{
+    background-image: url(imagens/background002.jpg);
 }
 
 footer{
