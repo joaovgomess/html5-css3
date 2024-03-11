@@ -14,14 +14,37 @@
             border-collapse: collapse;
         }
 
+        thead, tfoot{
+            background-color: gray;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: lightgray;
+            /*
+            Essa pseudo-classe ":nth-child()" é uma função que serve para fazer configurações pulando um intervalo que vc defina
+            Os valores podem ser:
+            -even, que significa par. Faz com que toda linha par receba as configuraçoes passadas
+            -odd, que significa ímppar. Faz com que toda linha ímpar receba as configuraçoes passadas
+            -o intervalo pode ser o quanto vc quiser tbm, para isso basta informar de quantos em quantos elemento essa configuração deve acontecer
+            por exemplo:
+            -3n (de 3 em 3)
+            -5n (de 5 em 5)
+            -16n (de 16 em 16)
+            e assimpor diante.
+
+
+            IMPORTANTE LEMBRAR:
+             even = 2n
+             odd = 2n-1
+            */
+        }
+
         th, td{
             border: 1px solid black;
             padding: 10px;
         }
 
-        thead, tfoot{
-            background-color: gray;
-        }
+        
 
         .num{
             text-align: right;
