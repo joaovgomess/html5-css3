@@ -42,17 +42,18 @@
     -->
 
     <table>
-        <thead>
+        <thead> <!--Cabeçalho da tabela-->
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th> <!--Celula de cabeçalho-->
+                <th scope="col">População</th> <!--Celula de cabeçalho-->
             </tr>
         </thead>
 
         <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">45 919 049</td>
+            <!--Define o corpo da tabela-->
+            <tr> <!--Define uma linha, e tudo que estiver dentro da tag vai estar na mesma linha-->
+                <td>São Paulo</td> <!--Celula normal da tabela-->
+                <td class="num">45 919 049</td> <!--Celula normal da tabela-->
             </tr>
 
             <tr>
@@ -100,15 +101,21 @@
                 <td class="num">7 610 361</td>
             </tr>
 
-
         </tbody>
 
-        <tfoot>
+        <tfoot> <!--Define o cabeçalho da tabela-->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">151.058.725</td>
             </tr>
         </tfoot>
     </table>
 </body>
 </html>
+
+<!--
+    -Note que em alguns "th" acrescentamos o parametro "scope"
+    -Ele serve para dizer aos navegadores onde a informação daquela 'th' está.
+    -Nessa tabela, por exemplo, o "th" Estado foi listado como 'col' porque as informaçoes referente a essa celula (o nome dos estados) está na coluna abaixo dele.
+    -Já na dentro da tag "tfoot", o "th" 'total de habitantes' recebe o parametro "scope" com o valor "row". Isso acontece pq a informação referente a essa célula esta ao seu lado (na mesma linha).
+-->
