@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Iframes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe{
+            width: 95vw;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Faça uma escolha</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dicta velit neque fugiat omnis, eligendi maxime at doloribus, eaque voluptatibus consequatur provident, dolore atque temporibus nobis placeat? Eum, perferendis dignissimos!</p>
+
+    <ul>
+        <li><a href="paginas-extras/pagina001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pagina002.html" target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pagina003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt totam, velit dolores unde temporibus obcaecati porro molestiae dolore officiis provident cumque eos nesciunt quisquam odit nostrum esse quae incidunt! Distinctio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet illum vero accusantium beatae similique repellat laboriosam laborum nostrum recusandae repellendus voluptatum earum vel labore, atque ipsa, eum dignissimos mollitia. Suscipit.</p>
+
+    <iframe src="" name="frame" frameborder="5">
+        <p>Infelizmente o seu navagador não é compatível com isso</p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum laborum praesentium accusantium officia nulla voluptate incidunt vel doloribus architecto rem in ex obcaecati minus ea ut quam eligendi, nisi sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, laborum a. Ex aliquam repellendus ullam, nobis amet a soluta asperiores dolorem, odit obcaecati dolorum, excepturi nostrum fugiat quo accusamus velit.</p>
+</body>
+</html>
+
+<!--
+    Podemos direcionar a pagina que ira aparecer no iframe interagindo com o nosso site. Neste exemplo, utilizamos uma lista de links, que ao serem clickados, direcionam uma pagina dentro do iframe
+
+    Para isso, tems que colocar o parametro 'name' no "iframe" e nomear ele do que quisermos. 
+    
+    Após isso, temos que ir no link, indicar a página que deve ser aberta no 'source' e colocar o 'target' cujo o valor será o nome que voce colocou no "iframe" (nesse exemplo foi "frame").
+-->
