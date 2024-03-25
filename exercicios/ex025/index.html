@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+
+    <form action="cadastro_java">
+        <p>
+            <label for="inome">Nome:</label> <input type="text" name="nome" id="inome">
+        </p>
+        <p>
+            <label for="isobrenome">Sobrenome</label> <input type="text" name="sobrenome" id="isobrenome">
+        </p>
+
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+</body>
+</html>
+
+<!--
+    Nesse exercicio aprendemos sobre formulários.
+    Para fazermos um formulário, precisamos usar a tag "form", que possui o parametro 'action' que serve para dizer para onde os dados daquele formulário serão enviados (back-end)
+
+    - dentro dos formulários temos os "label" que são apenas os nomes de cada campo a ser preenchido, mas é importante essa tag para indicar de qual campo é aquela label (através do parametro 'for').
+
+    - Nesse exemplo, tbm temos a tag "input" com o parametro do tipo 'text'. TODOS os inputs devem ter um parametro 'type', 'name' e 'id'.
+
+    - Os 'id' são mais utilizados pelo javascript e o css, já os 'name' são mais utilizados pelo html e pela linguagem do back-end(normalmente php).
+
+    - Note que o 'id' do input deve ser o mesmo valor do 'for' da tag label. Isso serve para indicar que aquele label é relacionado com aquele input.
+
+    - Temos tbm um input do tipo 'submit' que nada mais é do que um botão que serve para enviar os dados para o back-end.
+-->
