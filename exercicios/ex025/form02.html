@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="cadastro.java" method="post" autocomplete="on">
+        <p>
+            <label for="iuser">Usuário:</label>
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="25" placeholder="Nome de Usuário" autocomplete="username">
+        </p>
+
+        <p>
+            <label for="ipass">Senha:</label>
+            <input type="password" name="pass" id="ipass" required minlength="8" maxlength="25" placeholder="Senha" autocomplete="current-password">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
+
+<!--
+    Nessa parte do exercicio, apredemos sobre alguns parametros dos elementos de um formulário.
+
+    -Na tag "form", vimos o parametro 'method' que pode ser 'post' ou 'get'. O metodo get é para usar quando estamos trablhando com o envio de dados não sensíveis (nome, email, telefone). Já o método post é um pouquinho mais seguro, e é indicado para quando trabalhamos com o envio de dados sensiveis (senha, cartao de credito, documentos)
+
+    IMPORTANTE: O metodo post não é tão seguro assim, e para traballhar com real segurança devemos aprender sobre https
+    
+    -Na tag "input" temos vários parametros:
+        *required - serve para dizer que aquele campo é obrigatório. O site não deixa enviar os dados se esse campo estiver vazio.
+        *minlength - serve para dizer a quantidade minima de caracteres que aquele campo deve ter.
+        *maxlength - serve para dizer a quantidade minima de caracteres que aquele campo deve ter.
+        *placehoder - não sei explicar, abre o site e depois tira esse parametro pra vc ver oq muda kkkkkkk
+        *autocomplete - informa ao navegador de que tipo é aquele campo, para que ele sugira o autocomplete correto ao usuario.
+-->
