@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form action="cadastro.java" method="post">
+        <div>
+            <label for="iest">Estado</label>
+            <select name="select" id="iest">
+                <option value="" selected> ---Escolha---</option>
+
+                <optgroup label="Sul">
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="PR">Paraná</option>
+                    <option value="SC">Santa Catarina</option>
+                </optgroup>
+
+                <optgroup label="Sudeste">
+                    <option value="ES">Espírito Santo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup> 
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="itext-area">Mensagem:</label>
+            <br>
+            <textarea name="text-area" id="itexxt-area" cols="30" rows="10"></textarea>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="list-prof">
+            <datalist id="list-prof">
+                <option>Administador</option>
+                <option >Contador</option>
+                <option>Desenvolvedor</option>
+                <option>Médico</option>
+            </datalist>
+        </div>
+        
+        <br>
+        
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- 
+    Aprendemos alguns outros elementos de um formulário que não são tipos da tag input.
+
+    -select: aquele seletor muito comum de site. Dentro da tag select, utilizamos a tag 'option' que serve para definir cada opção. Através do html não é possivel organizar as opçoes por ordem alfabetica, ent a ordem com que as opçoes são escritas no código importa.
+        *Dentro da tag "option", temos o parametro 'selected' que serve para definir a opção que ja vai aparecer selecionada quando o site carregar.
+        *Note que antes das tag "option", nós colocamos uma tag "optgroup" que serve para agrupar determinadas opções dentro da lista. (abra o site para ver). O parametro label é o nome desse agrupamento
+
+    -textarea: area de texto padrão de site. Tem os parametros 'cols' e 'rows', que serve apenas para definir o tamanho que a caixa deve ficar até que o texto vá quebrar (ir pra próxima linha).
+
+    -datalist: é uma tag para ser usada em conjunto com um input de texto, numero e etc. 
+        *Ele serve para que ao clicar no campo a ser preenchido, apareça uma lista com opçoes a serem escolhidas (tipo o select), mas caso alguma daquelas opçoes não seja util para o usuario, ele pode escrever a propria opção no campo de texto
+ -->
